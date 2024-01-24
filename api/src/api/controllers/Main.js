@@ -1,13 +1,14 @@
 // import { connection, queryDatabase } from '../models/UserModel.js';
 import { Client } from '@notionhq/client';
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 class Main {
     init(req, res) {
-        const notion = new Client({ auth: NOTION_SECRET });
+        const notion = new Client({ auth: process.env.NOTION_SECRET });
 
         (async () => {
-            const databaseId = DB_ID;
+            const databaseId = process.env.DB_ID;
             const response = await notion.databases.query({
                 database_id: databaseId,
                 filter: {
