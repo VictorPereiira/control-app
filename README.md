@@ -26,7 +26,7 @@
  > 📄 Newsletter: [control-app](https://victorpereiira.com/control-app)
 
 ## Sobre
-<p>Controle de ativadades.</p>
+<p>Controle de atividades.</p>
 
 
 <h2 id="howToUse">Como usar</h2>
